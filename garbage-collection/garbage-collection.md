@@ -57,18 +57,18 @@ GC가 컬렉팅을 하지 않기때문에 메모리 누수가 일어난다. 강�
 1. Mark 
 객체가 생성될 때마다 mark bit가 0(false)로 설정된다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cfe4cc9a-56fd-4ee3-baad-b3cd0c589d93/Untitled.png)
+![Untitled]('./1.png')
 
 step1.
 
 1. Sweep
 Mark 이후에 mark bit가 여전히 0(false)로 설정된 객체들을 가지비 콜렉터가 수집해 메모리에서 해제된다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f9ea2ac5-92a8-4468-a6b2-dcf77630adf2/Untitled.png)
+![Untitled]('./2.png')
 
 step2.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/69e045f1-b886-4c5b-b59e-9321fb7c9240/Untitled.png)
+![Untitled]('./3.png')
 
 step3
 
