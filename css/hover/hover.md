@@ -1,6 +1,6 @@
 ### element 위에 마우스 올렸을 때 확대효과 주기
 
-```
+```css
   .video:hover {
     transform: scale(1.04);
   }
