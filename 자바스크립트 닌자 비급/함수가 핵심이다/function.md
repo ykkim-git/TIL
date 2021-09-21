@@ -35,12 +35,22 @@ window.onload = function () {
 _ex) 다른 함수에 대한 참조를 매개변수로 받고, 매개변수로 넘어온 함수를 콜백으로 호출하는 함수_
 
 ```javascript
-function useless(callback) {
-  return callback();
+function doHomework(subject, callback) {
+  alert(`Starting my ${subject} homework.`);
+  callback();
 }
+
+doHomework("math", function () {
+  alert("Finished my homework");
+});
+
+/**
+ * 결과
+ * 1. Starting my math homework.
+ * 2. Finished my homework
+ * /
 ```
+
 ---
 
 ## 함수 선언 (todo)
-
-
