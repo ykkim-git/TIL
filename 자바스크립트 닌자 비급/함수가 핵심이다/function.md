@@ -48,9 +48,12 @@ doHomework("math", function () {
  * 결과
  * 1. Starting my math homework.
  * 2. Finished my homework
- * /
+ */
 ```
 
 ---
 
+<br />
+
 ## 함수 선언 (todo)
+
