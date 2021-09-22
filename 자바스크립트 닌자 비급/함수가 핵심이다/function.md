@@ -56,4 +56,3 @@ doHomework("math", function () {
 <br />
 
 ## 함수 선언 (todo)
-

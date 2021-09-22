@@ -7,6 +7,6 @@
 ### TODO
 
 - <s>mocha testing page</s>
+- <s>반응형 웹 페이지 테스팅</s>
 - CORS 테스트 페이지
-- 반응형 웹 페이지 테스팅
 - drag and drop UI
