@@ -11,3 +11,4 @@
 - <s>drag and drop UI</s>
 - CORS 테스트 페이지
 - infinite scrolling
+- toy projects
