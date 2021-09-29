@@ -10,3 +10,4 @@
 - <s>반응형 웹 페이지 테스팅</s>
 - CORS 테스트 페이지
 - drag and drop UI
+- javascript this
