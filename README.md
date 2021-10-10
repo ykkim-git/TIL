@@ -14,5 +14,4 @@
 - infinite scrolling
 - vue 성능향상, rendering process
 - html web Components
-// - toy projects
 - js 메모리구조
