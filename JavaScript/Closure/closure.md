@@ -2,7 +2,9 @@
 
 ## 알기 쉽게 정리한 클로져
 
-> 아래와 같은 경우에, cnt라는 변수는 cntPlus라는 함수로만 변경시켜야 하는데, 외부에서 전역변수에 바로 접근해서 값을 변경한다면?
+> 클로져 = 함수 + 렉시컬 스코프이다. 함수를 만들고 그 함수 내부의 코드가 탐색하는 스코프를 함수 생성 당시의 렉시컬 스코프로 고정하면 클로저가 되는 것이다.
+
+### 아래와 같은 경우에, cnt라는 변수는 cntPlus라는 함수로만 변경시켜야 하는데, 외부에서 전역변수에 바로 접근해서 값을 변경한다면?
 
 ```javascript
 let cnt = 0;
@@ -64,4 +66,21 @@ cntClosure.printCnt(); // 1
 --------------------------------
 cntClosure.setCnt(100); // 100으로 cnt값 수정
 cntClosure.printCnt(); // 100
+```
+
+---
+
+### 또 다른 예제
+
+```js
+var color = "red";
+function foo() {
+  var color = "blue"; // 2
+  function bar() {
+    console.log(color); // 1
+  }
+  return bar;
+}
+var baz = foo(); // 3
+baz(); // 4
 ```
