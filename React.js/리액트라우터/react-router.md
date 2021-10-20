@@ -2,20 +2,21 @@
 
 > 설치: yarn add react-router-dom
 
-### 1. App.jsx
+### 1. index.js
 
 > 루트에 <BrowserRouter> 설정해주기
 
 ```js
 import { BrowserRouter } from "react-router-dom";
 
-function App() {
-  return (
+ReactDOM.render(
+  <React.StrictMode>
     <BrowserRouter>
-      <h1>hello world! this is home.</h1>
+      <App />
     </BrowserRouter>
-  );
-}
+  </React.StrictMode>,
+  document.getElementById("root")
+);
 ```
 
 ---
