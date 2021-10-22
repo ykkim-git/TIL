@@ -61,4 +61,5 @@ deque.push(2);
 console.log(deque.shift()); // 2
 deque.unshift(3);
 console.log(deque.pop()); // 1
+
 ```
