@@ -1,0 +1,6 @@
+# align-items와 align-content의 차이
+
+### align-items: flex line을 기준으로 아이템 정렬
+
+### align-content: flex line을 정렬.
+
