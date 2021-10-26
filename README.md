@@ -2,7 +2,10 @@
 
 ## deep in the FE
 
-<!-- ### https://ykkim-git.github.io/WIL -->
+
+### 원칙
+1. no copy & paste
+2. no give up
 
 ### TODO
 
