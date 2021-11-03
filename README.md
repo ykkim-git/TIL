@@ -18,3 +18,4 @@
 - infinite scrolling
 - vue 성능향상, rendering process
 - html web Components
+- TypeScript
