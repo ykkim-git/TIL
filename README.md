@@ -14,8 +14,8 @@
 - <s>drag and drop UI</s>
 - <s>js 메모리구조</s>
 - <s>javascript this</s>
+- <s>infinite scrolling</s>
 - CORS 테스트 페이지
-- infinite scrolling
 - vue 성능향상, rendering process
 - html web Components
 - TypeScript
