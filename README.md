@@ -15,8 +15,9 @@
 - <s>js 메모리구조</s>
 - <s>javascript this</s>
 - <s>infinite scrolling</s>
+- <s>TypeScript (Studying)</s>
 - core js 서적 스터디
 - CORS 테스트 페이지
 - vue 성능향상, rendering process
 - html web Components
-- TypeScript
+
