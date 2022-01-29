@@ -34,10 +34,9 @@ useEffect(() => {
 
 > 호출될때마다 새로운 레퍼런스를 만드는것이 '아니라' 한번만 만들고 메모리에 저장해놓고 다시 재사용한다.
 
-* Vue에서 ref와 같다. <div ref="myDiv">division</div>
+- Vue에서 ref와 같다. <div ref="myDiv">division</div>
 
 ```js
 const spanRef = useRef();
-
-<span ref="${spanRef}" className="span"></span>;
+<span ref={spanRef} className="span"></span>;
 ```
