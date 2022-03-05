@@ -57,3 +57,29 @@ export default function App({ Component, pageProps }) {
   return <Component {...pageProps} />;
 }
 ```
+
+---
+
+## Layout Pattern
+
+- children: 하나의 component를 다른 component안에 넣을 때 사용한다.
+
+  ```jsx
+  Layout.js;
+  export default function Layout({ children }) {
+    return (
+      <>
+        <Nav />
+        <div>{children}</div>
+      </>
+    );
+  }
+  ```
+
+  ```js
+  app.js에서 전체 Layout으로 감싸준다.
+  <Layout>
+    <Component {...pageProps} />
+  </Layout>
+  ```
+
