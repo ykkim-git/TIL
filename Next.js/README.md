@@ -152,3 +152,10 @@ router.push(
   (as = `/movies/${id}`) // 브라우져에서 마스킹 하기
 );
 ```
+
+- URL에 영화제목 넣기 (catch all url)
+  파일명은 [...params]로 변경(array 타입으로)
+
+## 404 page
+
+* pages/404.js 만들기.
