@@ -129,6 +129,26 @@ export async function getServerSideProps() {
     },
   };
 }
+```
 
-~~~js;
+## Dynamic Routes
+
+- pages 아래에 원하는route/{id값} 처럼 변수를 포함하는 Dynamic URL인것을 알려주려면
+
+```js
+[id].js 로 파일을 만들면 된다.
+```
+
+- query string 보내기
+
+```js
+router.push(
+  {
+    pathname: `/movies/${id}`,
+    query: {
+      title,
+    },
+  },
+  (as = `/movies/${id}`) // 브라우져에서 마스킹 하기
+);
 ```
