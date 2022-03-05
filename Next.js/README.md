@@ -111,3 +111,24 @@ const nextConfig = {
   },
 };
 ```
+
+## Serverside Rendering
+
+- 아래 함수는 오직 서버에서만 작동하는 함수다.
+
+```js
+export async function getServerSideProps() {
+  const { results } = await (
+    await fetch(`http://localhost:3000/api/movies`)
+  ).json();
+  return {
+    props: {
+      // 여기서 results를 리턴해주면, home에서 props로 넘겨줄 수 있다.
+      // will be passed to the page component as props
+      results,
+    },
+  };
+}
+
+~~~js;
+```
