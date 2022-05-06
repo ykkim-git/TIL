@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.opacity {
+  background: rgba(200, 200, 200, 0.9);
+}
+.control-button {
+  width: 100px;
+  height: 50px;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 10%);
+}
+.modal {
+  width: 50%;
+  height: 50%;
+  background-color: darkslategrey;
+  color: #fff;
+
+  text-align: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
