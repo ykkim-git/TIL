@@ -9,6 +9,5 @@
     "sourceMap": true // 개발자도구에서 Source탭 내 코드목록에 ts파일도 추가하여 디버깅에 용이하도록
     // "lib": ["dom"]
     // "exclude": ["excludts.ts"], // compile 되지않도록 설정 (보통은 node_modules를 넣지만 기본적으로 node_modules는 제외시킨다. 하지만 exlude를 설정하면 node_modules꼭 넣어주자)
-    // "files": ["app.ts"], 컴파일하고자 하는 개별 파일만 지정
   }
 }
