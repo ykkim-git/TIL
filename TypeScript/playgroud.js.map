@@ -1,1 +1,1 @@
-{"version":3,"file":"playgroud.js","sourceRoot":"","sources":["playgroud.ts"],"names":[],"mappings":";AAAA,qCAAqC;AAErC,MAAM,GAAG,GAAG,CAAC,CAAS,EAAE,CAAU,EAAE,CAAS,EAAE,EAAE,GAAE,CAAC,CAAC;AACrD,GAAG,CAAC,OAAO,EAAE,OAAO,EAAE,CAAC,CAAC,CAAC,CAAC,QAAQ"}
+{"version":3,"file":"playgroud.js","sourceRoot":"","sources":["playgroud.ts"],"names":[],"mappings":";AAEA,IAAI,KAAK,GAAG,KAAK,CAAC;AAElB,SAAS,KAAK;IACZ,OAAO,CAAC,GAAG,CAAC,KAAK,CAAC,CAAC;AACrB,CAAC"}
