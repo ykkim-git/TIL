@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 20px;
+      background-color: gray;
+    }
+
+    #parent {
+      /* 부모와 500px만큼의 공간을 두는것 (with translateZ) */
+      perspective: 200px;
+    }
+
+    #element {
+      margin: 0 auto;
+      width: 100px;
+      height: 100px;
+      transition: 1s;
+      background-color: red;
+      animation: show 3s forwards;
+    }
+
+    #element:hover {
+      background-color: blue;
+      /* x축으로 2배 확대 */
+      /* transform: scaleX(2); */
+
+      /* x축으로 100px만큼 이동 */
+      /* transform: translateX(100px); */
+
+      /* x축으로 100px만큼 이동 + scale2배 확대 */
+      /* transform: translateX(100px) scaleX(2); */
+
+      /* 부모 element속성 필요 */
+      /* transform: translateZ(100px); */
+
+      /* 360도 제자리 회전 */
+      /* transform: rotateZ(360deg); */
+
+      /* 위로 눕히기 */
+      /* transform: rotateX(30deg); */
+
+      /* 좌우로 돌리기 */
+      /* transform: rotateY(30deg); */
+
+      /* 3d & scale3d: gpu를 사용하여 더욱 부드럽다 (x,y,z 순서) */
+      /* transform: translate3d(30px, 0px, 50px); */
+      /* transform: scale3d(1.5, 1.5, 1); */
+
+      /* 20도만큼 비틀기 */
+      /* transform: skewX(20deg); */
+
+      /* 매트릭스: 종합적으로 공간 자체를 변경: 많이 사용하지는 않는다. (martrix generator 사용하면 좋다) */
+      /* transform: matrix3d(); */
+    }
+  </style>
+</head>
+
+<body>
+  <div id="parent">
+    <div id="element"></div>
+  </div>
+</body>
+
+</html>
