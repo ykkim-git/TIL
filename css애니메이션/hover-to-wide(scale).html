@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .card_animation {
+      display: flex;
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .card_animation li {
+      flex: 1;
+      height: 100vh;
+      line-height: 100vh;
+      text-align: center;
+
+      font-size: 50px;
+
+      transition: all 0.5s;
+    }
+
+    /* 1/n flex 정렬에서 2배로 늘리기 */
+    .card_animation li:hover {
+      flex: 2;
+      font-size: 70px;
+      color: #fff;
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+scale: 1.2;
+    }
+
+    .card_animation li:not(:hover) {
+      flex: 0.5;
+    }
+
+    .card_animation li:nth-child(1) {
+      background: url("./images/jeju001.jpeg") no-repeat center / cover;
+    }
+
+    .card_animation li:nth-child(2) {
+      background: url("./images//jeju002.jpeg") no-repeat center / cover;
+    }
+
+    .card_animation li:nth-child(3) {
+      background: url("./images/jeju003.jpeg") no-repeat center / cover;
+    }
+
+    .card_animation li:nth-child(4) {
+      background: url("./images/jeju004.jpeg") no-repeat center / cover;
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="card_animation">
+    <li>제주도</li>
+    <li>떠나요</li>
+    <li>하지만</li>
+    <li>코로나</li>
+  </ul>
+</body>
+
+</html>
