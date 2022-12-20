@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      background-color: #c8c8c8;
+    }
+
+    .box {
+      width: 300px;
+      height: 300px;
+      background-color: salmon;
+
+      /* 지속시간 */
+      /* transition-duration: 1s; */
+
+      /* transition 지속시간 연기 */
+      /* transition-delay: 1s; */
+
+      /* transition 가속도 */
+      transition-timing-function: cubic-bezier(0.2, 0.04, 0.08, 0.95);
+      
+      /* all: 지정할 경우 요소에 지정된 모든 속성이 변한됨 timing function은 ease가 기본 */
+      /* transition: all 2s; */
+    }
+
+    .box:hover {
+      width: 500px;
+      background-color: gold;
+    }
+
+    .box2 {
+      width: 300px;
+      height: 300px;
+      background-color: olivedrab;
+      transition-duration: 1s;
+      transition-timing-function: cubic-bezier(0.2, 0.04, 0.08, 0.95);
+      margin-top: 100px;
+    }
+
+    .box2:hover {
+      width: 500px;
+      background-color: gold;
+    }
+
+    .btn-wrap {
+      width: 300px;
+      height: 100px;
+      background-color: #fff;
+
+      border: 3px solid navy;
+
+      margin: 100px auto;
+      box-sizing: border-box;
+
+      position: relative;
+    }
+
+    .gage {
+      width: 0%;
+      height: 100%;
+      background-color: navy;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      transition-duration: 0.5s;
+    }
+
+    .btn-wrap h3 {
+      position: relative;
+      text-align: center;
+      line-height: 100px;
+      font-size: 26px;
+    }
+
+    /* btn-wrap의 마우스를 올리면 자식요소 page속성 */
+    .btn-wrap:hover .gage {
+      width: 100%;
+      color: #fff;
+    }
+
+    .btn-wrap:hover h3 {
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <div class="box"></div>
+  <div class="box2"></div> -->
+
+  <!-- 버튼 hover효과를 이용해 만들어보기 -->
+  <div class="btn-wrap">
+    <div class="gage"></div>
+    <h3>더 보기 &rarr;</h3>
+  </div>
+</body>
+
+</html>
