@@ -11,7 +11,7 @@ https://stackoverflow.com/questions/30961704/show-placeholder-text-for-input-typ
   이 방법은 캘린더를 띄우려면 input을 두번 선택해야하는 번거로움이 있어서 아래와같이 변경함
 
 ```html
-기존의 label을 덧씌우는 느낌으로
+
 <label for="age" class="overlabel" v-if="showDateLabel"
   >생년월일을 입력해주세요
   <img src="/images/ico-under-arrow.svg" />
